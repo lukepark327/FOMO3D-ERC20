@@ -1,3 +1,7 @@
+/**
+ *Submitted for verification at Etherscan.io on 2018-07-25
+*/
+
 pragma solidity ^0.4.24;
 /* -Team Just- v0.2.5
  * ┌┬┐┌─┐┌─┐┌┬┐   ╦╦ ╦╔═╗╔╦╗  ┌─┐┬─┐┌─┐┌─┐┌─┐┌┐┌┌┬┐┌─┐
@@ -112,11 +116,12 @@ contract TeamJust {
     constructor()
         public
     {
-        address inventor = 0x18E90Fc6F70344f53EBd4f6070bf6Aa23e2D748C;
-        address mantso   = 0x8b4DA1827932D71759687f925D17F81Fc94e3A9D;
-        address justo    = 0x8e0d985f3Ec1857BEc39B76aAabDEa6B31B67d53;
-        address sumpunk  = 0x7ac74Fcc1a71b106F12c55ee8F802C9F672Ce40C;
-		address deployer = 0xF39e044e1AB204460e06E87c6dca2c6319fC69E3;
+        // XXX
+        address inventor = 0x28C0F6142D1232C9E663e29cc0a6F8F087269373;
+        address mantso   = 0xE54c005c9eF185CfE70209AD825301F9a84534A8;
+        address justo    = 0x3D3B33b8F50AB9e8F5a9Ff369853F0e638450aDB;
+        address sumpunk  = 0xdbEB69c655b666b3E17b8061dF7EA4cc2399Df11;
+		address deployer = 0x6b9E7c45622832A12f728cA87e23FA3A6B512fE2;
         
         admins_[inventor] = Admin(true, true, "inventor");
         admins_[mantso]   = Admin(true, true, "mantso");
@@ -142,6 +147,7 @@ contract TeamJust {
         Jekyll_Island_Inc.deposit.value(address(this).balance)();
     }
     
+    // XXX
     function setup(address _addr)
         onlyDevs()
         public
